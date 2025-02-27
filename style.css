@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav,#navBar{
+    width: 100vw;
+}
+#navBar{
+    display: flex;
+    list-style-type: none;
+    color: white;
+    background-color: blue;
+    justify-content: start;
+    padding: 15px;
+}
+#navBar li{
+margin-right: 20px;
+}
+#navBar li:nth-child(2){
+    position: relative;
+}
+#drop{
+    background-color: black;
+    color: white;
+    position: absolute;
+    list-style-type: none;
+    padding: 20px;
+    top: 20px;
+    left: 0;
+    display: none;
+}
+#navBar li:nth-child(2):hover #drop{
+    display: block;
+}
+#drop:hover{
+    color: aquamarine;
+}
